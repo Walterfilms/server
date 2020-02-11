@@ -48,8 +48,9 @@ use OC\Tagging\Tag;
 use OC\Tagging\TagMapper;
 use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\ILogger;
+use OCP\ITags;
 
-class Tags implements \OCP\ITags {
+class Tags implements ITags {
 
 	/**
 	 * Tags
@@ -111,8 +112,6 @@ class Tags implements \OCP\ITags {
 
 	const TAG_TABLE = '*PREFIX*vcategory';
 	const RELATION_TABLE = '*PREFIX*vcategory_to_object';
-
-	const TAG_FAVORITE = '_$!<Favorite>!$_';
 
 	/**
 	* Constructor.
